@@ -19,10 +19,10 @@
 // specific language governing permissions and limitations under the License.
 //-----------------------------------------------------------------------------
 
-`include "dummy_module/dummy_header.svh"
+`include "dummy_header.svh"
 
 module dummy_submodule;
-  import cf_math_pkg::*;
+  import cf_math::*;
 `ifdef ENABLE_DUMMY_VIP
   initial begin
     #10us $info(`DUMMY_SUCCESS_MESSAGE);
