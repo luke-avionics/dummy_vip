@@ -1,7 +1,10 @@
 dummy_vip:
+  vlog_opts: [
+    -L common_cells_lib,
+  ]
   incdirs: [
     ./rtl,
-    ./inlcude,
+    ./include/dummy_module,
   ]
   files: [
     ./rtl/dummy_top.sv,
